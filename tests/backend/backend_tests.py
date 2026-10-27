@@ -12,8 +12,8 @@ from requests import HTTPError
 # noinspection PyTypeChecker
 sys.path.insert(0, "../..")
 
-from kaggle import api
-from kagglesdk.kernels.types.kernels_enums import KernelWorkerStatus
+from kaggle import api # type: ignore
+from kagglesdk.kernels.types.kernels_enums import KernelWorkerStatus # type: ignore
 
 ApiException = IOError
 # Unit test names include a letter to sort them in run order.
